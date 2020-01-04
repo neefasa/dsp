@@ -2,8 +2,8 @@
 
 >> 
 ## Probablility Mass Functions
-This questions engages with how sampling could cause a bias in results. We use the NSFG data to similate the effect.
-If we take of sample of children and as them how many kids are in their family, larger families would be over represented.
+This question engages with how sampling could cause a bias in results. We use the NSFG data to similate the effect.
+If we take a sample of children and ask them how many kids are in their family, larger families would be over represented.
 The BiasPmf function written by the author creates a biased Pmf object simulating this. 
 The following code plots two Pmfs, the one from the data from the survey and the other using the BiasPmf function.
 ```
@@ -33,4 +33,4 @@ print('Biased Mean:', PmfMean(biased_pmf_kids))
 Actual Mean: 1.024205155043831   
 Biased Mean: 2.403679100664282
 
-As predicted larger families would be over represented if a sampling was taken amoung children. No childrenless families would be represented. As we can see from the plot of the actual data, no children is the most probable. 
+As predicted larger families would be over represented if a sampling was taken amoung children. No childrenless families would be represented. As we can see from the plot of the actual data, families with no children is the most probable. 
