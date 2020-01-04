@@ -19,5 +19,6 @@ def PmfMean(pmf):
 
 print('Actual Mean:', PmfMean(pmf_kids))
 print('Biased Mean:', PmfMean(biased_pmf_kids))
+
 Actual Mean: 1.024205155043831
 Biased Mean: 2.403679100664282
