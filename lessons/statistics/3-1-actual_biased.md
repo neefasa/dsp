@@ -6,7 +6,7 @@ This question engages with how sampling could cause a bias in results. We use th
 If we take a sample of children and ask them how many kids are in their family, larger families would be over represented.
 The BiasPmf function written by the author creates a biased Pmf object simulating this. 
 The following code plots two Pmfs, the one from the data from the survey and the other using the BiasPmf function.
-```
+```python
 resp = nsfg.ReadFemResp()  
 
 pmf_kids = thinkstats2.Pmf(resp.numkdhh, label='actual')  
@@ -20,7 +20,7 @@ thinkplot.Show(xlabel='kids in a family', ylabel='PMF')
 
 ### Funcation to calculate the mean of from the PMF
 The following function calculates the mean from the Pmf object. 
-```
+```python
 def PmfMean(pmf):  
     pmf_mean = 0 
         for x, p in pmf.Items():  
