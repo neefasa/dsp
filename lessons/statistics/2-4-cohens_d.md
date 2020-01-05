@@ -7,7 +7,7 @@ The mean of first borns is 7.2lb, while the mean of non-first borns is 7.3lb
 The Cohen's d is 8.9%. This is about 3 times the Cohen's d for the pregnancy 
 length.
 
-```
+```python
 mean_first = firsts.totalwgt_lb.mean()
 mean_other = others.totalwgt_lb.mean()
 cohen_d_wgt = CohenEffectSize(firsts.totalwgt_lb, 
